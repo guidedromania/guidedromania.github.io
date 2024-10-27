@@ -1,0 +1,372 @@
+/* Global Styles */
+*, *:before, *:after {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #1C1C1E;
+    background: #FFCC00;
+  }
+  
+::selection {
+    color: #1C1C1E;
+    background: #FFCC00;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #FFCC00;
+    color: #1C1C1E;
+}
+
+button {
+    background-color: transparent;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p, h4 {
+    line-height: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #1C1C1E;
+}
+
+/* Tour Container */
+.container {
+    height: 100dvh;
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: #FFFFFF;;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF;;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+/* Header */
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 52px;
+}
+
+.headerButton, .tourDownloadButton {
+    display: flex;
+    padding: 12px;
+}
+
+.headerButton img, .tourDownloadButton img {
+    width: 28px;
+}
+
+.headerTitle {
+    font-size: 20px;
+    font-weight: normal;
+    width: 100%;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 12px 12px 12px 0;
+}
+
+/* Download Menu */
+
+#download {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    z-index: 2;
+}
+
+#download.hidden {
+    display: none;
+}
+
+.downloadMenu {
+    position: absolute;
+    color: #E5E5EA;
+    top: 0px;
+    right: 0px;
+    margin: 16px;
+    list-style: none;
+    background-color: #2C2C2E;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 0px 12px;
+    border-radius: 8px;
+}
+
+.downloadMenu li {
+    display: flex;
+    gap: 8px;
+    padding-right: 4px;
+    align-items: center;
+    line-height: 48px;
+    border-bottom: 1px solid #48484A;
+}
+
+.downloadMenu li:last-child { 
+    border-bottom: none; 
+}
+
+.downloadMenu img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    padding: 0 16px;
+    list-style: none;
+}
+
+.tabs li {
+    display: flex;
+    height: 44px;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    line-height: 44px;
+    width: 100%;
+    border-bottom: 4px solid inherit;
+}
+
+.tabs li.active {
+    border-bottom: 4px solid #FFCC00;
+    color: #1C1C1E;
+    font-weight: bold;
+}
+
+.tabs img {
+    width: 20px;
+    height: 20px;
+}
+
+.tabs a {
+    line-height: 20px;
+    text-decoration: none;
+    color: #1C1C1E;
+}
+
+/* Tab Content */
+.tabContentContainer {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: calc(100dvh - 240px);
+    overflow: auto;
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.active {
+    display: flex;
+}
+
+/* Chapter Cards */
+#chaptersList {
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 16px;
+    padding: 16px;
+}
+
+.chaptersCard {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.chaptersCardGradient {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    aspect-ratio: 16/6;
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0) 25%, 75%, rgba(0,0,0,1));
+}
+
+.chaptersCardLabel {
+    display: flex;
+    width: calc(100% - 32px);
+    gap: 16px;
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chaptersCardLabel img {
+    width: 40px;
+    height: 40px;
+}
+
+.chaptersCardLabel h4 {
+    color: #FFFFFF;;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Map */
+#map {
+    height: inherit;
+}
+
+/* Script Cards */
+#script {
+    padding: 32px 32px 12px 32px;
+}
+
+/* Player */
+.player {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 32px);
+    height: 140px;
+    background-color: #FFCC00;
+    z-index: 1;
+    padding: 0 16px;
+}
+
+#chapterTitle {
+    width: 100%;
+    padding: 12px 0 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Progress Slider */
+#progressSlider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #FFFFFF;;
+    outline: none;
+    border-radius: 2px;
+    position: relative;
+    margin: 8px 0;
+}
+
+#progressSlider::-webkit-slider-runnable-track {
+    background: #FFFFFF;;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#progressSlider::before {
+    content: '';
+    height: 4px;
+    width: var(--progress) ;
+    background: #1C1C1E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+/* Slider Thumb (Knob) */
+#progressSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: #1C1C1E;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    top: -4px;
+    z-index: 2;
+
+}
+
+
+#progressSlider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background-color: #1C1C1E;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -4px;
+}
+
+#progressSlider::-moz-range-track {
+    background: #FFFFFF;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#progressSlider::-moz-range-progress {
+    background: #1C1C1E;
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* Time Information */
+.timeInfo {
+    display: flex;
+    width: 100%;
+    height: 16px;
+    justify-content: space-between;
+}
+
+.timeInfo span {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* Playback Controls */
+.controls {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+}
+
+#playPauseButton {
+    margin: 0 4px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 720px) {
+    .chaptersCard {
+        width: calc(50% - 8px);
+    }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 1080px) {
+    .chaptersCard {
+        width: calc(25% - 12px);
+    }
+}
