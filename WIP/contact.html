@@ -24,33 +24,33 @@
         <div class="contactContainer">
     
             <form class="contactForm" action="https://formsubmit.co/your@email.com" method="POST">
-                <fieldset class="nameInput">
-                    <h5 class="inputlabel">Name *</h5>
-                    <input class="contactInput textBox" type="text" id="name" name="name" placeholder="Your name ..." required />
+                <fieldset class="contactInput nameInput">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your name ..." required />
                 </fieldset >
-                <fieldset  class="emailInput">
-                    <h5 class="inputlabel">Email address *</h5>
-                    <input class="contactInput textBox" type="email" id="email" name="email" value="" placeholder="Your email address ..." required />
+                <fieldset  class="contactInput emailInput">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" value="" placeholder="Your email address ..." required />
                 </fieldset >
-                <fieldset   class="messageInput">
-                    <h5 class="inputlabel">Message *</h5>
-                    <textarea class="contactInput textBox textArea" id="message" name="message" placeholder="Your message ..." required></textarea>
+                <fieldset   class="contactInput messageInput">
+                    <label for="message">Message *</label>
+                    <textarea rows="10" id="message" name="message" placeholder="Your message ..." required></textarea>
                 </fieldset >
-                <div class="consentToggleContainer">
+                <div class="contactConsent">
                     <input type="checkbox" id="consentToggle" class="toggleButton">
                     <label for="consentToggle">I agree to the use of my name and email for communication purposes. My personal data will not be shared, and I can request its deletion at any time. </label>
                 </div>
                 <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
                 <!-- <input type="hidden" name="_captcha" value="false"> -->
                 <input type="text" name="_honey" style="display:none">
-                <button type="submit" id="submitButton" class="fill" disabled>send message</button>
+                <button type="submit" id="submitButton" disabled>Send Message</button>
             </form>
     
         </div>
 
     </div>
     
-
+    <script src="scripts/contact.js"></script>
 
 </body>
 </html>
