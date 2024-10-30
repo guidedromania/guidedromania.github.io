@@ -109,7 +109,7 @@ nav.scrolled .navTitle {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url("../assets/home_background.png");
+    background-image: url("../assets/home_background.jpg");
     background-size: cover;
     background-position: center;
     overflow: auto;
