@@ -341,10 +341,27 @@ nav.scrolled .navTitle {
 
 .contactConsent label{
     font-size: 14px;
+    line-height: 16px;
+    padding-top: 4px;
+}
+
+.toggleButton{
+    display:none;
+}
+.toggleButton + label{
+    background:url('../assets/toggle_off_icon.svg') no-repeat;
+    height: 24px;
+    line-height: 24px;
+    display:inline-block;
+    padding: 0px 0px 0px 50px;
+    cursor: pointer;
+}
+.toggleButton:checked + label{
+    background:url('../assets/toggle_on_icon.svg') no-repeat;
 }
 
 #submitButton {
-    margin-top: 32px;
+    margin-top: 16px;
     color: #FFFFFF;
     background-color: #1C1C1E;
 }
@@ -352,8 +369,6 @@ nav.scrolled .navTitle {
 #submitButton:disabled {
     opacity: 0.25;
 }
-
-
 
 
 
