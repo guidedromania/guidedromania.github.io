@@ -56,7 +56,7 @@ nav {
 
 nav.scrolled {
     background-color: #1C1C1E;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); */
 }
 
 .navLogo {
@@ -163,7 +163,7 @@ nav.scrolled .navTitle {
     max-width: 480px;
     padding: 24px;
     margin: 32px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(16px);
     border-radius: 8px;
 }
@@ -180,7 +180,7 @@ nav.scrolled .navTitle {
 .guidesContainer {
     margin: auto;
     height: 100dvh;
-    background-color: #E5E5EA;
+    background-color: #F2F2F7;
     overflow: auto;
 }
 
@@ -197,8 +197,8 @@ nav.scrolled .navTitle {
 
 .guidesGroupTitle {
     font-size: 14px;
-    color: #636366;
-    padding: 0px 12px 8px 12px;
+    color: #8E8E93;
+    padding: 0px 8px 8px 8px;
 }
 
 .guidesGroupList {
@@ -316,8 +316,8 @@ nav.scrolled .navTitle {
 .contactInput label {
     font-size: 14px;
     color: #1C1C1E;
-    /* padding: 0px 12px 8px 12px; */
-    padding-bottom: 8px;
+    padding: 0px 8px 8px 8px;
+
     font-weight: 500;
 }
 
@@ -344,25 +344,22 @@ nav.scrolled .navTitle {
 }
 .toggleButton + label{
     background:url('../assets/toggle_off_icon.svg') no-repeat;
-    height: 24px;
-    line-height: 24px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
     display:inline-block;
-    padding: 0px 0px 0px 32px;
+    padding: 0px 0px 0px 28px;
     cursor: pointer;
 }
 .toggleButton:checked + label{
     background:url('../assets/toggle_on_icon.svg') no-repeat;
 }
 
-.contactConsent label{
-    font-size: 14px;
-    line-height: 18px;
-    padding-top: 4px;
+.contactConsent{
+    padding: 16px 8px;
 }
 
-
 #submitButton {
-    margin-top: 16px;
     color: #FFFFFF;
     background-color: #1C1C1E;
 }
