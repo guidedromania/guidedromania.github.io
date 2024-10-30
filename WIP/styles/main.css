@@ -339,12 +339,6 @@ nav.scrolled .navTitle {
     height: auto
 }
 
-.contactConsent label{
-    font-size: 14px;
-    line-height: 16px;
-    padding-top: 4px;
-}
-
 .toggleButton{
     display:none;
 }
@@ -353,12 +347,19 @@ nav.scrolled .navTitle {
     height: 24px;
     line-height: 24px;
     display:inline-block;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 32px;
     cursor: pointer;
 }
 .toggleButton:checked + label{
     background:url('../assets/toggle_on_icon.svg') no-repeat;
 }
+
+.contactConsent label{
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 4px;
+}
+
 
 #submitButton {
     margin-top: 16px;
