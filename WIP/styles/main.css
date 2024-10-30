@@ -365,7 +365,7 @@ nav.scrolled .navTitle {
 }
 
 #submitButton:disabled {
-    opacity: 0.25;
+    opacity: 0.333;
 }
 
 
